@@ -1,0 +1,13 @@
+{
+  "name": "exerices",
+  "version": "1.0.0",
+  "description": "Typescript implementation for Practical Object_Oriented Design V2",
+  "main": "index.js",
+  "author": "kevin zou",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
