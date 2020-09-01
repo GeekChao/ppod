@@ -2,6 +2,7 @@
  * Summary: Write the changable code
  *  1. A Class and its method must have a single responsibility. Ask 'w' question or describe its responsibility in a single sentence
  *  2. Any decision you make in advance of an explicit requirement is just a guess.
+ *  3. isolate the vulunerable external message
  */
 
 class Gear {
@@ -15,12 +16,12 @@ class Gear {
     return this.chainring / this.cog;
   }
 
-  public get gear_inches() {
-    if (this.wheel) {
-      return this.ratio * this.wheel?.diameter;
-    }
+  private get diameter() {
+    return this.wheel?.diameter || 0;
+  }
 
-    return undefined;
+  public get gear_inches() {
+    return this.ratio * this.diameter;
   }
 }
 
