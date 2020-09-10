@@ -1,3 +1,10 @@
+/**
+ * Composition is an explicit message delegation
+ * Composition fits well into a has-a relationship
+ * Duck types fits well into behaves-like-a relationship
+ * Inheritance fits well into a is-a relationship
+ */
+
 class Part {
   public constructor(
     private name: string,
